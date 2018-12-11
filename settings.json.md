@@ -1,4 +1,6 @@
-`Visual Studio Code` Settings (`Work`/`MacBook Pro 15"`)
+# Visual Studio Code Settings
+
+### `Work`/`MacBook Pro 15"`
 
 ```
 {
