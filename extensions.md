@@ -9,5 +9,9 @@
 * [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 * [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 * [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
- 
- ...
+* [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+* [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+* [Power Mode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode)
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
