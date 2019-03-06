@@ -2,6 +2,9 @@
 
 ### `Work`/`MacBook Pro 15"`
 
+* [`Fira Code`](https://github.com/tonsky/FiraCode) font is required by the settings below.
+* `"powermode.enabled": true` - is an optional setting which can be turned on/off depends on the mood.
+
 ```
 {
     "workbench.startupEditor": "newUntitledFile",
@@ -36,6 +39,5 @@
     "explorer.confirmDelete": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.updateImportsOnFileMove.enabled": "always"
-    // "powermode.enabled": true
 }
 ```
