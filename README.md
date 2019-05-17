@@ -4,4 +4,5 @@
 * [Visual Studio Code settings](/settings.json.md)
 * [Visual Studio Code extensions](/extensions.md)
 * [iTerm theme](/itermtheme.md)
+* [Oh My ZSH settings](/zshrc.md)
 
