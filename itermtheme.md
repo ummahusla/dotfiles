@@ -3,6 +3,8 @@
 
 ### `OneHalfDark.itermcolors`
 
+* Font - 16pt Fira Code (medium)
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
