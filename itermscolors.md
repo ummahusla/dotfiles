@@ -1,3 +1,9 @@
+
+# iTerms color scheme
+
+### `OneHalfDark.itermcolors`
+
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Name:		One Half Dark
@@ -352,3 +358,4 @@
 	</dict>
 </dict>
 </plist>
+```
