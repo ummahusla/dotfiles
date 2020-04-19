@@ -41,7 +41,7 @@
 ### `Work`/`MacBook Pro 15"`
 
 ```
-   {
+{
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Cobalt2",
