@@ -1,6 +1,4 @@
 
 # iTerms color scheme
 
-### Dark theme for iTerm
-
-* [Installation link](https://draculatheme.com/iterm)
+* [Dracula theme for iTerm](https://draculatheme.com/iterm)
