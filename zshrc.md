@@ -1,12 +1,36 @@
 # Oh My ZSH settings
 
-### `.zshrc` general
+### Requirements
+
+* [Dracula for ZSH](https://draculatheme.com/zsh)
+* [Fish-like autosuggestions for zsh](https://github.com/zsh-users/zsh-autosuggestions)
+* [Node Version Manager](https://github.com/nvm-sh/nvm)
+
+---
+
+### `.zshrc`
 
 ```
-# To automate managing of the node version upon entering directories with .nvmrc files
+ZSH_THEME="dracula"
+
+...
+
+plugins=(
+    git
+    zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+...
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# place this after nvm initialization!
 autoload -U add-zsh-hook
 load-nvmrc() {
-  local node_version="$(nvm version)"
   local nvmrc_path="$(nvm_find_nvmrc)"
 
   if [ -n "$nvmrc_path" ]; then
@@ -14,42 +38,14 @@ load-nvmrc() {
 
     if [ "$nvmrc_node_version" = "N/A" ]; then
       nvm install
-    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
       nvm use
     fi
-  elif [ "$node_version" != "$(nvm version default)" ]; then
+  elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
     echo "Reverting to nvm default version"
     nvm use default
   fi
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
-```
-
-### `.zshrc` work-related
-
-```
-# Workshop related aliases
-alias ws-up="docker-compose -f ~/Documents/repos/services/workshop/docker-compose.yml up -d --force-recreate sedna platform nginx dynamodb-local search-platform"
-alias ws-stop="docker-compose -f ~/Documents/repos/services/workshop/docker-compose.yml stop"
-alias ws-down="docker-compose -f ~/Documents/repos/services/workshop/docker-compose.yml down"
-alias ws-setup="~/Documents/repos/services/workshop/bin/setup-workshop.sh --tear-down-es y"
-
-# Generate specific amount of new emails
-function wsImport() {
-  if [ "$1" = "nodocker" ]; then
-    TO_INDEX="1"
-  else
-    if [ "$2" != "nodocker" ]; then
-      echo "Starting Worker Docker container..."
-      docker start sedna-worker
-    fi
-    TO_INDEX="${1:-1}"
-  fi
-  echo "Importing $TO_INDEX email(s)..."
-  pushd ~/Documents/repos/services/one-off-scripts/bulk_eml_creation
-  yarn run exec --toIndex=$TO_INDEX
-  ../import_emls_into_test_environment/import-emls-to-test-env.sh workshop ./target
-  popd
-}
 ```
