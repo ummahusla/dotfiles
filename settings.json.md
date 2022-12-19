@@ -3,6 +3,7 @@
 ### Requirements
 
 * [Dank Mono font](https://philpl.gumroad.com/l/dank-mono)
+* [Extensions](https://github.com/ummahusla/dotfiles/blob/master/extensions.md)
 
 ___
 
