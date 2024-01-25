@@ -1,8 +1,9 @@
 # dotfiles
 
-* [Git Aliases](/gitalias.md)
-* [Visual Studio Code settings](/settings.json.md)
-* [Visual Studio Code extensions](/extensions.md)
-* [iTerm theme](/itermtheme.md)
-* [Oh My ZSH settings](/zshrc.md)
+* [Git Aliases](/git/alias.md)
+* [Visual Studio Code settings](/vscode/settings.json.md)
+* [Visual Studio Code extensions](/vscode/extensions.md)
+* [iTerm theme](/iterm/itermtheme.md)
+* [Oh My ZSH settings](/zsh/zshrc.md)
+* [Raycast settings](/raycast/settings.md)
 

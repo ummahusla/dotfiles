@@ -1,6 +1,12 @@
 # Git Aliases
 
-## Setup
+## Script
+
+* Run `git-alias-setup.sh`
+* `chmod +x git-alias-setup.sh`
+* `./git-alias-setup.sh`
+
+## Manual Setup
 
 ```
 $ git config --global alias.co checkout
