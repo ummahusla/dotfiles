@@ -30,7 +30,7 @@ ___
   "terminal.integrated.fontSize": 16,
   "editor.cursorStyle": "line",
   "editor.insertSpaces": true,
-  "editor.tabSize": 23,
+  "editor.tabSize": 16,
   "editor.formatOnSave": true,
   "editor.accessibilitySupport": "off",
   "editor.fontLigatures": true,
@@ -72,7 +72,7 @@ ___
   "editor.inlineSuggest.enabled": true,
   "workbench.colorCustomizations": {},
   "importCost.typescriptExtensions": ["\\.tsx?$"],
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Theme",
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
@@ -86,7 +86,7 @@ ___
   },
 
   "terminal.explorerKind": "external",
-  "terminal.integrated.automationProfile.osx": {},
+  "terminal.integrated.automationProfile.osx": null,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "prettier.useEditorConfig": false,
