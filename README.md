@@ -6,4 +6,4 @@
 * [iTerm theme](/iterm/itermtheme.md)
 * [Oh My ZSH settings](/zsh/zshrc.md)
 * [Raycast settings](/raycast/settings.md)
-
+* [Shottr settings](/shottr/settings.md)
