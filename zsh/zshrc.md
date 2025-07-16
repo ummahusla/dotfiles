@@ -2,6 +2,7 @@
 
 ### Requirements
 
+* [Installing ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 * [Dracula for ZSH](https://draculatheme.com/zsh)
 * [Fish-like autosuggestions for zsh](https://github.com/zsh-users/zsh-autosuggestions) ([Install](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh))
 * [Node Version Manager](https://github.com/nvm-sh/nvm)
