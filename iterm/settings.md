@@ -6,7 +6,7 @@
 
 ## Settings → Profiles → Colors
 
-* Color Preset: `Dracula`
+* Color Preset: [`Dracula`](https://draculatheme.com/iterm)
 
 ## Settings → Profiles → Text
 
